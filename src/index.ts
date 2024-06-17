@@ -19,7 +19,6 @@ interface Todo {
     getTasks(): Todo[] {
       return this.todos;
     }
-  
     completeTask(id: number): void {
       const todo = this.todos.find(t => t.id === id);
       if (todo) {
@@ -30,7 +29,6 @@ interface Todo {
       }
     }
   }
-  
   // Test the functionality
   const todoList = new TodoListManager();
   todoList.addTask("Learn TypeScript");
@@ -38,4 +36,3 @@ interface Todo {
   console.log(todoList.getTasks());
   todoList.completeTask(1);
   console.log(todoList.getTasks());
-  
