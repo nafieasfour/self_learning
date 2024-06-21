@@ -29,7 +29,8 @@ interface Todo {
       }
     }
   }
-  // Testing the functionality
+
+  
   const todoList = new TodoListManager();
   todoList.addTask("Learn TypeScript");
   todoList.addTask("Build a To-Do List App");
