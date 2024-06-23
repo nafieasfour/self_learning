@@ -4,6 +4,11 @@ interface Todo {
     completed: boolean;
   }
 
+interface Task{
+  id: number;
+  title:string;
+}
+
   class TodoListManager {
     private todos: Todo[] = [];
     private nextId: number = 1;
